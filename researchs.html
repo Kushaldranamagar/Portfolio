@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+  table, th, td {
+    border: 5px solid #fff;
+    border-collapse: collapse;
+    border-color:#ffff99;
+  }
+
+  th, td {
+    padding: 5px;
+    text-align: center;
+    color:  #fff;
+    font-family: Arial;
+  }
+        .contain{
+          max-width: 1140px;
+          margin: auto;
+        }
+    
+        .row{
+          display: flex;
+          flex-wrap: wrap;
+        }
+    
+        header .branding h1{
+          text-decoration: none;
+          font-size: 25px;
+          font-weight: 600;
+          color: #fff;
+          padding: 0px 15px;
+          position: relative;
+          
+        }
+    
+        header .highlight{
+          color: red;
+        }
+    
+        header{
+          position: absolute;
+          top:0;
+          left: 0;
+          right: 0; 
+          border-bottom: 2px solid #fff; 
+          padding: 0px 15px;
+        }
+    
+        header .row{
+          justify-content: space-between;
+          align-items: center;
+        }
+    
+        header .navbar ul{
+          list-style: none;
+          padding: 0;
+          margin: 0; 
+        }
+        header .navbar ul li{
+          display: inline-block;
+          margin-left: 35px;
+    
+        }
+        header .navbar ul li a{
+          margin:10px 0;
+          font-size: 18px;
+          text-decoration: none;
+          line-height: 72px;
+          color:  #fff;
+          display: block;
+          font-weight: 600;
+          text-transform: uppercase;
+          position: relative;
+          transition: .5s;
+          z-index: 1;
+        }
+    
+        header .navbar ul li a:hover{
+          color: #000;
+        }
+    
+        header .navbar ul li a:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          border-top: 4px solid #fff;
+          border-bottom: 4px solid #fff;
+          transform: scaleY(1.2);
+          opacity: 0;
+          transition: .5s;
+          z-index: -1;
+        }
+    
+        header .navbar ul li a:hover:before{
+          transform: scaleY(1);
+          opacity: 1;
+        }
+    
+        header .navbar ul li a:after{
+          content: '';
+          position: absolute;
+          top: 1px;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: #f5f5f0; 
+          transform: scaleY(0);
+          transition: .5s;
+          z-index: -1;
+        }
+    
+        header .navbar ul li a:hover:after{
+          transform: scaleY(1);
+          border-radius: 10px;
+        }
+    
+</style>
+</head>
+<body style="background-color: black;">
+  <header>
+		<div class="contain">
+		  <div class="row">
+			<div class="branding">
+				<h1><span class="highlight">Research</span>Section</h1>
+			</div>
+			<div class="navbar">
+				<ul>
+					<li><a href="Index.html" class="active">Home</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="Blogs.html">Blogs</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="researchs.html">Research</a></li>
+				</ul>
+			</div>
+		  </div>	
+		</div>
+	</header><br><br><br><br>
+   <h3 style="text-align:center;">Comparision</h3>
+  <table style="width:100%">
+    <tr>
+      <th>Personal Portfolio Of NED</th>
+      <th>Home Page</th>
+    </tr>
+    <tr>
+      <td>
+        <img src="images/Research/Nad.png" alt="w3_pic" height="50%" width="100%">
+        <p style="color: red;">The personal portfolio of NED has black and white theme in his home page.
+        	He has also introduced a bit in the body section. I found this to be very classic<br>
+        	and cool.
+        </p>
+      </td>
+      <td>
+        <img src="images/Research/home.png" alt="CV_pic" height="50%" width="100%">
+        <P style="color: red;">I liked his concept of using black and white color only in his home page.
+        So i also did the same with my home page.</P>
+      </td>
+    </tr>
+  </table><br>
+  <table style="width:100%">
+    <tr>
+      <th>Coding Market Youtube</th>
+      <th>My CV</th>
+    </tr>
+    <tr>
+      <td>
+        <img src="images/Research/CV.png" alt="w3_pic" height="50%" width="100%">
+        <p style="color: red;">I saw how Coding Market used some icons and text to make curriculum vita
+        	in Youtube. He made two left and right section for icons illustrations and text section.
+        </p>
+      </td>
+      <td>
+        <img src="images/Research/CVr.png" alt="w3_pic" height="50%" width="100%">
+        <p style="color: red;">I used my pictures and some icons to show my photo and skills as well as my social media
+        profiles in the left section. I used right section for the texts to define my academic qualificaitions and hobby.</p>
+      </td>
+    </tr>
+  </table><br>
+  <table style="width:100%">
+    <tr>
+      <th>Meta Learn</th>
+      <th>Download Button</th>
+    </tr>
+    <tr>
+      <td>
+        <img src="images/Research/Button.png" alt="w3_pic" height="50%" width="100%">
+        <p style="color: red;">I liked how a button called "Get in touch" was used in this home page.</p>
+      </td>
+      <td>
+        <img src="images/Research/home.png" alt="w3_pic" height="50%" width="100%">
+        <p style="color: red;">I liked the idea of putting the button in home page so i also put the button called 
+        "Download CV" in my home page too.</p>
+      </td>
+    </tr>
+  </table><br>
+  <table style="width:100%">
+    <tr>
+      <th>Al kavadlo</th>
+      <th>Blogs</th>
+    </tr>
+    <tr>
+      <td>
+        <img src="images/Research/Blog.png" alt="w3_pic" height="50%" width="100%">
+        <p style="color: red;">I saw how big pictures and some texts were used in the left side occupying larger area and some small pictures and short texts in the right side containing samll area.</p>
+      </td>
+      <td>
+        <img src="images/Research/Blogsss.png" alt="w3_pic" height="50%" width="100%">
+        <p style="color: red;">I used larger pictures and more texts in the left side to explain different impacts of technology in our daily life. I used smaller pictures and less texts in the right side.</p>
+      </td>
+    </tr>
+  </table><br>
+  <table style="width:100%">
+    <tr>
+      <th>Steven Kinnear</th>
+      <th>Contact form</th>
+    </tr>
+    <tr>
+      <td>
+        <img src="images/Research/Steven.png" alt="w3_pic" height="50%" width="100%">
+        <p style="color: red;">Steven has used contact form to get in touch with him and and a message box to send him message and lastly a button in the end to send. </p>
+      </td>
+      <td>
+        <img src="images/Research/Contact.png" alt="w3_pic" height="50%" width="100%">
+        <p style="color: red;">I liked the idea so i also tried adding some more input area and a submit button .</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

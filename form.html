@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Date and Time</title>
+<script type="text/javascript"> 
+function display_ct() {
+document.getElementById('ct').innerHTML = new Date();
+setTimeout('display_ct()',1000);
+}
+</script>
+</head>
+
+<body onload=display_ct();>
+<span id='ct' ></span>
+
+</body>
+</html>

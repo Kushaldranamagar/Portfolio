@@ -1,0 +1,181 @@
+/*giving margin value and declaring font-family of the body*/
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*giving maximum width and margin to the class called container*/
+.container{
+	max-width: 1140px;
+	margin: auto;
+}
+/*declaring display style to the class called row */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+/* giving properties to the text of heading h1 of branding class of header*/
+header .branding h1{
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: 600;
+	color: #fff;
+	padding: 0px 15px;
+	position: relative;
+	 
+}
+/* giving color to the specified class called hightlight class of header*/
+header .highlight{
+	color: red;
+}
+/*deteeminng the position of the header and boder properties*/
+header{ 
+	position: absolute;
+	left: 0;
+	right: 0; 
+	border-bottom: 2px solid #fff; 
+	padding: 0px 15px;
+}
+
+header .row{
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .navbar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0; 
+}
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 35px;
+
+}
+header .navbar ul li a{
+	margin:10px 0;
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 72px;
+	color:  #fff;
+	display: block;
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+	transition: .5s;
+	z-index: 1;
+}
+
+header .navbar ul li a:hover{
+	color: #000;
+}
+
+header .navbar ul li a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border-top: 4px solid #fff;
+	border-bottom: 4px solid #fff;
+	transform: scaleY(1.2);
+	opacity: 0;
+	transition: .5s;
+	z-index: -1;
+}
+
+header .navbar ul li a:hover:before{
+	transform: scaleY(1);
+	opacity: 1;
+}
+/*desicides what happens  and how it transforms after moving cursor to ul li a of class called navbar*/
+header .navbar ul li a:after{
+	content: '';
+	position: absolute;
+	top: 1px;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: #f5f5f0; 
+	transform: scaleY(0);
+	transition: .5s;
+	z-index: -1;
+}
+/*gives the property to the ul li a after hover effect*/
+header .navbar ul li a:hover:after{
+	transform: scaleY(1);
+	border-radius: 10px;
+}
+/*inserting background image and giving it properties */
+.home{
+	height: 100vh;
+    background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/pic.jpg") no-repeat;
+	background-size: 100% 100%;
+	padding: 15px;
+}
+
+.home .full-screen{
+	min-height: 577px;
+}
+
+.home .home-content{
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.home .home-content .block{
+	flex: 0 0 75%;
+	max-width: 75%;
+	padding-left: 35px;
+	border-left: 5px solid #ffffff ;
+	margin-top: 50px;
+}
+.home .home-content .block h6{
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+.home .home-content .block h1{
+	color: #e60000;
+	font-size: 60px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+}
+.home .home-content .block h3{
+	color: #ffffff;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+.home .home-content .block .button{
+	padding-top: 20px;
+}
+
+.home .home-content .block .button a{
+	border-radius: 4px;
+	color: #ffffff;
+	border:1px solid #ffffffff;
+	padding: 12px 25px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+/*giving hover effect to a button*/
+.home .home-content .block .button a:hover{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+
+
+
+

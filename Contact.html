@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contacts</title>
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
+  <style>
+				
+		.contain{
+			max-width: 1140px;
+			margin: auto;
+		}
+
+		.row{
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		header .branding h1{
+			text-decoration: none;
+			font-size: 25px;
+			font-weight: 600;
+			color: #fff;
+			padding: 0px 15px;
+			position: relative;
+			
+		}
+
+		header .highlight{
+			color: red;
+		}
+
+		header{ 
+			position: absolute;
+			top:0;
+			left: 0;
+			right: 0; 
+			border-bottom: 2px solid #fff; 
+			padding: 0px 15px;
+		}
+
+		header .row{
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		header .navbar ul{
+			list-style: none;
+			padding: 0;
+			margin: 0; 
+		}
+		header .navbar ul li{
+			display: inline-block;
+			margin-left: 35px;
+
+		}
+		header .navbar ul li a{
+			margin:10px 0;
+			font-size: 18px;
+			text-decoration: none;
+			line-height: 72px;
+			color:  #fff;
+			display: block;
+			font-weight: 600;
+			text-transform: uppercase;
+			position: relative;
+			transition: .5s;
+			z-index: 1;
+		}
+
+		header .navbar ul li a:hover{
+			color: #000;
+		}
+
+		header .navbar ul li a:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			border-top: 4px solid #fff;
+			border-bottom: 4px solid #fff;
+			transform: scaleY(1.2);
+			opacity: 0;
+			transition: .5s;
+			z-index: -1;
+		}
+
+		header .navbar ul li a:hover:before{
+			transform: scaleY(1);
+			opacity: 1;
+		}
+
+		header .navbar ul li a:after{
+			content: '';
+			position: absolute;
+			top: 1px;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background: #f5f5f0; 
+			transform: scaleY(0);
+			transition: .5s;
+			z-index: -1;
+		}
+
+		header .navbar ul li a:hover:after{
+			transform: scaleY(1);
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body onload=display_ct();>
+    </script>
+  <header>
+		<div class="contain">
+		  <div class="row">
+			<div class="branding">
+				<h1><span class="highlight">My</span>Contact</h1>
+			</div>
+			<div class="navbar">
+				<ul>
+					<li><a href="Index.html" class="active">Home</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="Blogs.html">Blogs</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="researchs.html">Research</a></li>
+				</ul>
+			</div>
+		  </div>	
+		</div>
+	</header>
+  <section class="contact-me">
+      <h1>Get in touch with me</h1>
+    <div class="contact-form">
+      <div class="text">
+        <h2>Drop a message</h2>
+	<form name="contactform" onsubmit="validation()">
+		<label>First Name:</label><br><input type="text" name="fname"><br><br>
+		<label>Last Name:</label><br><input type="text" name="lname"><br><br>
+		<label>Address:</label><br><input type="text" name="address"><br><br>
+		<label>Phone No:</label><br><input type="number" name="contact"><br><br>
+		<label>Email:</label><br><input type="Email" name="email"><br><br>
+		<label>Message:</label><br><textarea name="message" rows="10" cols="50" placeholder="Enter Message"></textarea><br>
+		<input type="submit" name="submit">
+	</form></div>
+</div>
+</section>
+<footer>
+	<span id='ct' style="color:white;" ></span>
+	<p>&copy;MyPortfolio</p>
+</footer>
+<script type="text/javascript" src="js/contact.js">
+    function display_ct() {
+    document.getElementById('ct').innerHTML = new Date();
+    setTimeout('display_ct()',1000);
+    }
+   </script>
+</body>
+</html>
